@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    list-style: none;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    max-width: 1200px; /*logo e seções proporcionais*/
+    margin: 0 auto; /*logo e seções proporcionais*/
+}
+
+.container img {
+    cursor: pointer;
+}
+
+img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+ul {
+    text-align: right;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+}
+
+a:hover {
+    color: yellow;
+}
+
+#home {
+    padding: 155px;
+    text-align: center;
+    background-color:#333;
+    color:#fff;
+}
+
+#home > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home img {
+    width: 600px;
+    margin-left: 150px;
+}
+
+#enredo img {
+    width: 25%;
+}
+
+h1 {
+    letter-spacing: 1px
+}
+
+section {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#enredo {
+    max-width: 1600px;
+    padding: 0 85px 0 85px;
+    font-size: 18px;
+    background-color: #ccc;
+}
+
+#enredo h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+p {
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+#enredo p {
+    text-align: justify;
+}
+
+#enredo div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 70px 70px 70px;
+}
+
+#enredo img {
+    margin-right: 70px;
+}
+
+#elenco h1 {
+    text-align: center;
+}
+
+#elenco {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color: #333;
+    color: #fff;
+}
+
+#elenco p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.autores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.autores img {
+    width: 200px;
+    height: 270px;
+    margin: 30px 30px 5px;
+    object-fit: cover; /*mantém proporções da imagem*/
+}
+
+#trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+    background-color: #ccc;
+}
+
+#trailer h1 {
+    padding: 50px 50px 25px;
+}
+
+iframe {
+    width: 560px;
+    height: 315px; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        position: static;
+    }
+
+    img {
+        margin-right: 0;
+    }
+
+    li {
+        margin: 0;
+    }
+
+    #home {
+        padding: 50px;
+    }
+
+    #home h1 {
+        display: none;
+    }
+
+    #home img {
+        width: 125%;
+        margin-left: 0;
+    }
+
+    span {
+        display: none;
+    }
+
+    #enredo {
+        padding: 0;
+    }
+
+    #enredo h1 {
+        padding: 30px 0 10px;
+    }
+
+    #enredo div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12.5px;
+    }
+
+    #enredo img {
+        width: 300px;
+        margin: 0;
+        padding-bottom: 12.5px;
+    }
+
+    h1 {
+        font-size: larger;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .autores img {
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px; /* Ajuste conforme necessário */
+    }
+
+    #trailer h1 {
+        padding: 25px 20px;
+    }
+}
